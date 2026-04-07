@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calvin Huth — Cinema</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+  <!-- Ambient Background -->
+  <div class="flow-bg"></div>
+
+  <!-- Logo -->
+  <div class="logo">
+    <span class="logo-text">CALVIN HUTH</span>
+  </div>
+
+  <!-- Navigation Dots -->
+  <nav class="nav-dots">
+    <div class="nav-dot active" data-label="Home" data-target="hero"></div>
+    <div class="nav-dot" data-label="Films" data-target="films"></div>
+    <div class="nav-dot" data-label="Photos" data-target="photography"></div>
+    <div class="nav-dot" data-label="About" data-target="about"></div>
+    <div class="nav-dot" data-label="Contact" data-target="contact"></div>
+  </nav>
+
+  <!-- Sound Toggle -->
+  <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">
+    <svg class="sound-off" viewBox="0 0 24 24">
+      <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path>
+    </svg>
+    <svg class="sound-on" viewBox="0 0 24 24">
+      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path>
+    </svg>
+  </button>
+
+  <!-- Content Flow -->
+  <main class="content-flow">
+    
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-video-wrap">
+        <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
+          <source src="https://res.cloudinary.com/dtx6gx2pp/video/upload/v1775585366/Arthur_-_720_d5f4gb.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <!-- Content directly below video - tight spacing -->
+      <div class="hero-content">
+        <div class="hero-title-wrap">
+          <div class="hero-visual-text reveal revealed">VISUAL</div>
+          <div class="hero-storyteller reveal reveal-delay-1 revealed">STORYTELLER</div>
+        </div>
+        <p class="hero-subtitle reveal reveal-delay-2">Cinematographer · Photographer · Editor</p>
+        
+        <div class="scroll-line reveal reveal-delay-3">
+          <span>Explore</span>
+          <div class="scroll-line-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Films -->
+    <section class="films" id="films">
+      
+      <article class="film-item reveal">
+        <div class="film-video-wrap">
+          <video muted loop playsinline autoplay>
+            <source src="https://res.cloudinary.com/dtx6gx2pp/video/upload/v1775585360/shadows_720_vxnyhl.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="film-meta">
+          <h3 class="film-title">Shadows in the Understory</h3>
+          <div class="film-info">
+            <span class="film-category">Passion Project</span>
+            <span class="film-number">01</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="flow-connector"></div>
+
+      <article class="film-item reveal">
+        <div class="film-video-wrap">
+          <video muted loop playsinline autoplay>
+            <source src="https://res.cloudinary.com/dtx6gx2pp/video/upload/v1775585364/handbuilt_720_w02fke.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="film-meta">
+          <h3 class="film-title">Handbuilt II — Tyler McCaul</h3>
+          <div class="film-info">
+            <span class="film-category">Marzocchi</span>
+            <span class="film-number">02</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="flow-connector"></div>
+
+      <article class="film-item reveal">
+        <div class="film-video-wrap">
+          <video muted loop playsinline autoplay>
+            <source src="https://res.cloudinary.com/dtx6gx2pp/video/upload/v1775585358/wild_west_720_dxlkve.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="film-meta">
+          <h3 class="film-title">Wild West</h3>
+          <div class="film-info">
+            <span class="film-category">Adidas | FiveTen</span>
+            <span class="film-number">03</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="flow-connector"></div>
+
+      <article class="film-item reveal">
+        <div class="film-video-wrap">
+          <video muted loop playsinline autoplay>
+            <source src="https://res.cloudinary.com/dtx6gx2pp/video/upload/v1775585372/canvas_720_yskvvn.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="film-meta">
+          <h3 class="film-title">Canvas</h3>
+          <div class="film-info">
+            <span class="film-category">Multi Brand Film</span>
+            <span class="film-number">04</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Photography -->
+    <section class="photography" id="photography">
+      <div class="photo-intro reveal">
+        <h2>FRAMES</h2>
+        <p>Moments Captured</p>
+      </div>
+
+      <div class="photo-river">
+        <div class="photo-row">
+          <div class="photo-item large reveal">
+            <img src="images/027_-_Tahsis.jpg" alt="Tahsis">
+          </div>
+          <div class="photo-item small reveal reveal-delay-1">
+            <img src="images/DJI_0016.jpg" alt="Aerial">
+          </div>
+        </div>
+
+        <div class="photo-row">
+          <div class="photo-item medium reveal">
+            <img src="images/DSC00493.jpg" alt="Adventure">
+          </div>
+          <div class="photo-item medium reveal reveal-delay-1">
+            <img src="images/DSC06426.jpg" alt="Nature">
+          </div>
+        </div>
+
+        <div class="photo-row">
+          <div class="photo-item small reveal">
+            <img src="images/DSC3659.jpg" alt="Cinematic">
+          </div>
+          <div class="photo-item large reveal reveal-delay-1">
+            <img src="images/DSC2601.jpg" alt="Action">
+          </div>
+        </div>
+
+        <div class="photo-row">
+          <div class="photo-item medium reveal">
+            <img src="images/DSC6764.jpg" alt="Documentary">
+          </div>
+          <div class="photo-item medium reveal reveal-delay-1">
+            <img src="images/DSC05663.jpg" alt="Cinematic">
+          </div>
+        </div>
+
+        <div class="photo-row">
+          <div class="photo-item large reveal">
+            <img src="images/DSC7260.jpg" alt="Action">
+          </div>
+          <div class="photo-item small reveal reveal-delay-1">
+            <img src="images/Reece_1.11.1.jpg" alt="Portrait">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about-text reveal">
+        <h2>art IN MOTION<br><span class="dim"></span></h2>
+        <p>I'm Calvin Huth — a cinematographer, photographer, and editor who operates with the precision of a full crew compressed into one. Technical expertise meets artistic intuition, transforming complex productions into powerful visual narratives. Every frame intentional. Every cut serves the story.</p>
+      </div>
+      <div class="about-images">
+        <div class="about-img reveal">
+          <img src="images/39_Me.jpg" alt="At work">
+        </div>
+        <div class="about-img reveal reveal-delay-1">
+          <img src="images/B65I5531.jpg" alt="Behind scenes">
+        </div>
+        <div class="about-img reveal reveal-delay-2">
+          <img src="images/B65I5458.JPG" alt="On set">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2 class="reveal">
+        LET'S
+        <span>CREATE</span>
+      </h2>
+      
+      <div class="contact-links reveal reveal-delay-1">
+        <a href="mailto:calvinhuth@calvinhuth.com" class="contact-link">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">calvinhuth@calvinhuth.com</span>
+        </a>
+        <div class="contact-link">
+          <span class="contact-link-label">Location</span>
+          <span class="contact-link-value">Nanaimo, BC</span>
+        </div>
+      </div>
+
+      <div class="social-row reveal reveal-delay-2">
+        <a href="https://www.instagram.com/calvinhuth/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+        <a href="https://www.youtube.com/@CalvinHuth" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span>© 2024 CALVIN HUTH</span>
+    <span>CINEMA · PHOTOGRAPHY · CRAFT</span>
+  </footer>
+
+  <script src="script-index.js"></script>
+</body>
+</html>
